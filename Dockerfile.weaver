@@ -8,6 +8,8 @@ RUN curl -C - -L -o /app/goblinWeaver-2.1.0.jar https://github.com/Goblin-Ecosys
 
 RUN chmod -R 777 /app
 
+COPY ./goblinWeaver_data /app/goblinWeaver_data
+
 # Entry point
 CMD ["java", "-Dneo4jUri=bolt://neo4jMaven:7687", "-Dneo4jUser=neo4j", "-Dneo4jPassword=Password1", "-jar", "/app/goblinWeaver-2.1.0.jar", "noUpdate"]
 

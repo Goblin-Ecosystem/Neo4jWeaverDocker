@@ -2,6 +2,8 @@
 
 This directory allows you to set up the [Maven Central Neo4j database](https://zenodo.org/records/11104819) and the [Weaver API](https://github.com/Goblin-Ecosystem/goblinWeaver) easily using Docker.
 
+⚠️ If you wish to use the Maven database already containing the pre-calculated metrics, set the branch to “metrics_dataset”.
+
 ## Fisrt launch
 To run it for the first time, use the command:
 ```

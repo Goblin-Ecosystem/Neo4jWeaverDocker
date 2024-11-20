@@ -2,7 +2,7 @@ FROM neo4j:4.4.36-community
 
 RUN apt-get update && apt-get install -y curl && apt-get clean
 
-RUN curl -C - -L -o /data/Goblin_Maven_Central_Graph.dump https://zenodo.org/records/13683940/files/goblin_maven_30_08_24.dump
+RUN curl -C - -L -o /data/Goblin_Maven_Central_Graph.dump https://zenodo.org/records/13734581/files/with_metrics_goblin_maven_30_08_24.dump
 
 ENV NEO4J_AUTH=neo4j/Password1
 
